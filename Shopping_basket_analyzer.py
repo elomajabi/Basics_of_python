@@ -1,12 +1,12 @@
-from numpy.ma.extras import average
 
 products = []
 while True:
     x = input("Input price: ")
 
-    if x.lower == "exit":
+    if x.lower() == "exit":
         break
 
+    x = float(x)
     products.append(x)
 
 print(products)
